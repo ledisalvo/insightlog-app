@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5P0wELYpMG4cWkDgQ0AkYAGw/3PxF7R+wFPw1Oec3t0=",
+  "Source": "InsightLogs.API",
+  "BasePath": "_content/InsightLogs.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

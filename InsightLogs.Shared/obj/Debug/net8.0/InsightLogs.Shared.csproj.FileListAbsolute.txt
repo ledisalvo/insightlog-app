@@ -1,0 +1,12 @@
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\bin\Debug\net8.0\InsightLogs.Shared.deps.json
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\bin\Debug\net8.0\InsightLogs.Shared.dll
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\bin\Debug\net8.0\InsightLogs.Shared.pdb
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.csproj.AssemblyReference.cache
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.AssemblyInfoInputs.cache
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.AssemblyInfo.cs
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.dll
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\refint\InsightLogs.Shared.dll
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\InsightLogs.Shared.pdb
+C:\Users\ledis\source\repos\InsightLogs\InsightLogs.Shared\obj\Debug\net8.0\ref\InsightLogs.Shared.dll

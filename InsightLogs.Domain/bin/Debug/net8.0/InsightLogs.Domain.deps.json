@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "InsightLogs.Domain/1.0.0": {
+        "runtime": {
+          "InsightLogs.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InsightLogs.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

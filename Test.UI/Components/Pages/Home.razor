@@ -1,0 +1,49 @@
+﻿@page "/"
+@using MudBlazor
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<MudForm @ref="form" @bind-IsValid="@success">
+    <DataAnnotationsValidator />
+    <MudTextField @bind-Value="_newLog.Service" Label="Servicio" />
+    <MudTextField @bind-Value="_newLog.Message" Label="Mensaje" />
+    <MudTextField @bind-Value="_newLog.StackTrace" Label="Stack Trace" Lines="3" />
+    <MudSelect T="string" @bind-Value="_filterSeverity" Label="Severidad">
+        @foreach (var severity in _severities)
+        {
+            <MudSelectItem T="string" Value="@severity">@severity</MudSelectItem>
+        }
+    </MudSelect>
+    <MudButton Color="Color.Primary" OnClick="@(()=>SubmitLog())">Guardar</MudButton>
+</MudForm>
+
+
+
+Welcome to your new app.
+
+@code {
+    private string? _filterSeverity;
+    bool success;
+    private readonly string?[] _severities = { null, "Low", "Medium", "High" };
+    MudForm form;
+
+    private ErrorLogDto _newLog = new();
+
+    private void SubmitLog()
+    {
+        Console.WriteLine("ENVIANDO NUEVO LOG");
+    }
+
+    public class ErrorLogDto
+    {
+        public Guid Id { get; set; }
+        public string Service { get; set; } = "";
+        public string Message { get; set; } = "";
+        public string StackTrace { get; set; } = "";
+        public string Severity { get; set; } = "";
+        public DateTime Timestamp { get; set; }
+        public bool Resolved { get; set; }
+    }
+}

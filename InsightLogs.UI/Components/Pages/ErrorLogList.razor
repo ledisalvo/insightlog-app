@@ -1,0 +1,284 @@
+﻿@page "/logs"
+@inject HttpClient Http
+@inject IDialogService _dialogService
+@using InsightLogs.UI.Components.Dialog
+@using MudBlazor
+@using System.Net
+@using System.ComponentModel.DataAnnotations
+@using InsightLogs.Application.Helpers;
+
+<MudPaper Class="p-4">
+    <MudText Typo="Typo.h5">Registrar nuevo error</MudText>
+
+    <MudForm @ref="form" @bind-IsValid="@success">
+        <MudTextField @bind-Value="_newLog.Service" Label="Servicio"/>
+        <MudTextField @bind-Value="_newLog.Message" Label="Mensaje" />
+        <MudTextField @bind-Value="_newLog.StackTrace" Label="Stack Trace" Lines="3" />
+        <MudSelect T="string" @bind-Value="_newLog.Severity" Label="Severidad">
+            @foreach (var severity in _severities)
+            {
+                <MudSelectItem T="string" Value="@severity">@severity</MudSelectItem>
+            }
+        </MudSelect>
+
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(()=>SubmitLog())">Guardar</MudButton>
+    </MudForm>
+
+    <MudDivider Class="my-4" />
+
+    <MudText Typo="Typo.h5">Logs existentes</MudText>
+
+    <MudTextField @bind-Value="_filterService" Label="Servicio" />
+    <MudSelect T="string" @bind-Value="_filterSeverity" Label="Severidad">
+        @foreach (var severity in _severities)
+        {
+            <MudSelectItem T="string" Value="@severity">@severity</MudSelectItem>
+        }
+    </MudSelect>
+    <MudDatePicker @bind-Date="_from" Label="Desde" />
+    <MudDatePicker @bind-Date="_to" Label="Hasta" />
+
+    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="SearchLogs">Buscar</MudButton>
+
+    <MudTable @ref="_table"
+    T="ErrorLogDto" 
+    ServerData="LoadServerData"
+    PageSize="_pageSize"
+    RowItems="_logs"
+    RowsPerPageOptions="new int[] { 5, 10, 20 }"
+    Hover="true">
+        <HeaderContent>
+            <MudTh>Servicio</MudTh>
+            <MudTh>Mensaje</MudTh>
+            <MudTh>Severidad</MudTh>
+            <MudTh>Fecha</MudTh>
+            <MudTh>Resuelto</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd>@context.Service</MudTd>
+            <MudTd>@context.Message</MudTd>
+            <MudTd>@context.Severity</MudTd>
+            <MudTd>@context.Timestamp.ToLocalTime().ToString("g")</MudTd>
+            <MudTd>@(context.Resolved ? "Sí" : "No")</MudTd>
+            <MudTd>
+                <MudButton Size="Size.Small"
+                           Color="Color.Secondary"
+                           OnClick="@(() => AnalyzeError(context))">
+                    <MudIcon Icon="@Icons.Material.Filled.Psychology" Class="me-1" />
+                    Analizar con IA
+                </MudButton>
+            </MudTd>
+        </RowTemplate>
+        <PagerContent>
+            <MudTablePager />
+        </PagerContent>
+    </MudTable>
+
+</MudPaper>
+
+@code {
+    private List<ErrorLogDto> _logs = new();
+    private MudTable<ErrorLogDto>? _table;
+    private int _totalItems = 0;
+    private int _page = 1;
+    private int _pageSize = 10;
+    private string? _severity;
+    private string? _filterService;
+    private string? _filterSeverity;
+    private DateTime? _from;
+    private DateTime? _to;
+    bool success;
+    MudForm form;
+
+    private string _value;
+    private Margin _margin;
+    private bool _dense;
+    private bool _disabled;
+    private bool _readonly;
+    private bool _placeholder;
+    private bool _helperText;
+    private bool _helperTextOnFocus;
+    private bool _clearable;
+    private bool _fitContent;
+    private bool _modal = true;
+
+
+    private ErrorLogDto _newLog = new();
+    private readonly string?[] _severities = { "", "Low", "Medium", "High" };
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("INICIALIZANDO...");
+        await LoadLogs();
+    }
+
+    private async Task LoadLogs()
+    {
+        try
+        {
+            var query = new List<string>();
+
+            if (!string.IsNullOrWhiteSpace(_filterService))
+                query.Add($"service={_filterService}");
+
+            if (!string.IsNullOrWhiteSpace(_filterSeverity))
+                query.Add($"severity={_filterSeverity}");
+
+            if (_from.HasValue)
+                query.Add($"from={_from.Value:yyyy-MM-dd}");
+
+            if (_to.HasValue)
+                query.Add($"to={_to.Value:yyyy-MM-dd}");
+
+            var url = "/api/errorlogs";
+            query.Add($"page={_page}");
+            query.Add($"pageSize={_pageSize}");
+
+            url += "?" + string.Join("&", query);
+
+
+            var response = await Http.GetFromJsonAsync<ErrorLogResponse>(url);
+            _logs = response?.Data ?? new();
+            _totalItems = response?.Total ?? 0;
+            StateHasChanged(); // Actualizar la UI
+        }
+        catch (Exception error)
+        {
+            var info = ExceptionInfoExtractor.Extract(error);
+
+            var fullMessage = $"[{info.Assembly}.{info.Namespace}.{info.Class}.{info.Method} @ line {info.Line}]\n" +
+                  $"Archivo: {info.File}\n" +
+                  $"Mensaje: {error.Message}";
+
+            Console.WriteLine(fullMessage);
+
+            var errorObj = new ErrorLogDto()
+                {
+                    Id = Guid.NewGuid(),
+                    Message = error.Message,
+                    StackTrace = error.StackTrace,
+                    Service = error.TargetSite.Name,
+                    ErrorMetadataJson = fullMessage
+                };
+
+            var response = await Http.PostAsJsonAsync("/api/errorlogs", errorObj);
+            if (response.IsSuccessStatusCode)
+            {
+                await LoadLogs();
+            }
+            else
+            {
+                // Manejo de error simple (podemos mejorarlo con MudSnackbar después)
+                Console.WriteLine("Error en el método LoadLogs() de ErrorLogList.razor");
+            }
+        }
+    }
+
+    private async Task SearchLogs()
+    {
+        _page = 1;
+        await LoadLogs();
+        if (_table is not null)
+            await _table.ReloadServerData();
+    }
+
+    private async Task SubmitLog()
+    {
+        Console.WriteLine("ENVIANDO NUEVO LOG");
+        _newLog.Timestamp = DateTime.UtcNow;
+
+        var response = await Http.PostAsJsonAsync("/api/errorlogs", _newLog);
+        if (response.IsSuccessStatusCode)
+        {
+            _newLog = new(); // Reset
+            await LoadLogs();
+        }
+        else
+        {
+            // Manejo de error simple (podemos mejorarlo con MudSnackbar después)
+            Console.WriteLine("Error al guardar el log.");
+        }
+    }
+
+    private async Task MarkAsResolved(Guid id)
+    {
+        var response = await Http.PutAsync($"/api/errorlogs/{id}/resolve", null);
+        if (response.IsSuccessStatusCode)
+        {
+            await LoadLogs(); // recargar tabla
+        }
+        else
+        {
+            Console.WriteLine("Error al marcar como resuelto");
+        }
+    }
+
+    private async Task<TableData<ErrorLogDto>> LoadServerData(TableState state, CancellationToken cancellationToken)
+    {
+        _page = state.Page + 1; // MudBlazor usa 0-based
+        _pageSize = state.PageSize;
+
+        var query = new List<string>
+        {
+            $"page={_page}",
+            $"pageSize={_pageSize}"
+        };
+
+        if (!string.IsNullOrWhiteSpace(_filterService))
+            query.Add($"service={_filterService}");
+
+        if (!string.IsNullOrWhiteSpace(_filterSeverity))
+            query.Add($"severity={_filterSeverity}");
+
+        if (_from.HasValue)
+            query.Add($"from={_from.Value:yyyy-MM-dd}");
+
+        if (_to.HasValue)
+            query.Add($"to={_to.Value:yyyy-MM-dd}");
+
+        var url = "/api/errorlogs?" + string.Join("&", query);
+
+        var response = await Http.GetFromJsonAsync<ErrorLogResponse>(url, cancellationToken);
+
+        return new TableData<ErrorLogDto>
+            {
+                Items = response?.Data ?? new(),
+                TotalItems = response?.Total ?? 0
+            };
+    }
+
+    private async Task AnalyzeError(ErrorLogDto error)
+    {
+        var parameters = new DialogParameters
+            {
+                ["ErrorLog"] = error
+            };
+
+        var options = new DialogOptions { MaxWidth = MaxWidth.Medium, FullWidth = true };
+
+        _dialogService.ShowAsync<AnalysisAI>("Análisis del Error", parameters, options);
+    }
+
+    
+
+    public class ErrorLogDto
+    {
+        public Guid Id { get; set; }
+        public string Service { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+        public string StackTrace { get; set; } = string.Empty;
+        public string Severity { get; set; } = "Not defined"; // Low, Medium, High
+        public DateTime Timestamp { get; set; } = DateTime.UtcNow;
+        public bool Resolved { get; set; } = false;
+        public string ReportedBy { get; set; } = "System";
+        public string ErrorMetadataJson { get; set; } = string.Empty;
+    }
+
+    public class ErrorLogResponse
+    {
+        public int Total { get; set; }
+        public int Page { get; set; }
+        public int PageSize { get; set; }
+        public List<ErrorLogDto> Data { get; set; } = new();
+    }
+}

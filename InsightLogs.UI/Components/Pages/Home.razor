@@ -1,0 +1,16 @@
+﻿@page "/"
+@using MudBlazor
+
+<MudPaper Class="p-4">
+    <MudText Typo="Typo.h5">Texto con estilo MudBlazor</MudText>
+    <MudButton Color="Color.Primary">Botón estilizado</MudButton>
+    <MudSelect T="string" Label="Test select" @bind-Value="_dummy">
+        <MudSelectItem T="string" Value="@("Low")">Low</MudSelectItem>
+        <MudSelectItem T="string" Value="@("Medium")">Medium</MudSelectItem>
+        <MudSelectItem T="string" Value="@("High")">High</MudSelectItem>
+    </MudSelect>
+</MudPaper>
+
+@code {
+    private string? _dummy;
+}

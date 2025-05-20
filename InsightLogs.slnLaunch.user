@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "InsightLogs.API\\InsightLogs.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "InsightLogs.UI\\InsightLogs.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

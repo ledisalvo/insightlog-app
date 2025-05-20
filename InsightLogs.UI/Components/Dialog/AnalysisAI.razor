@@ -1,0 +1,65 @@
+﻿@using MudBlazor
+@inject IDialogService DialogService
+@inject NavigationManager Navigation
+
+<MudDialog>
+    <DialogContent>
+        @if (_analizando)
+        {
+            <MudProgressCircular Indeterminate="true" Size=MudBlazor.Size.Medium Color="Color.Secondary" Class="d-block mx-auto my-4" />
+            <MudText Align="Align.Center">Analizando con IA...</MudText>
+        }
+        else
+        {
+            <MudText Typo="Typo.h6" GutterBottom="true">Causa probable:</MudText>
+            <MudPaper Class="p-3 mb-3">@_causa</MudPaper>
+
+            <MudText Typo="Typo.h6" GutterBottom="true">Sugerencia de solución:</MudText>
+            <MudPaper Class="p-3">@_solucion</MudPaper>
+        }
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Close">Cerrar</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    [Parameter] public ErrorLogDto ErrorLog { get; set; }
+    private void Close() => MudDialog.Close(DialogResult.Ok(true));
+
+    private string? _causa;
+    private string? _solucion;
+    private bool _analizando = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1500); // Simula procesamiento IA
+
+        // Mock de análisis IA
+        _causa = ErrorLog.Message.Contains("NullReference")
+            ? "El error indica que se intentó usar una variable que no fue inicializada."
+            : "El error sugiere un problema de validación o acceso a datos.";
+
+        _solucion = ErrorLog.Message.Contains("NullReference")
+            ? "Verificá que la variable esté instanciada antes de usarla. Usá `if (obj != null)` o considerá usar el operador `?`."
+            : "Revisá que los parámetros de entrada sean válidos y estén correctamente formateados.";
+
+        _analizando = false;
+    }
+
+    public class ErrorLogDto
+    {
+        public Guid Id { get; set; }
+        public string Service { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+        public string StackTrace { get; set; } = string.Empty;
+        public string Severity { get; set; } = "Not defined"; // Low, Medium, High
+        public DateTime Timestamp { get; set; } = DateTime.UtcNow;
+        public bool Resolved { get; set; } = false;
+        public string ReportedBy { get; set; } = "System";
+        public string ErrorMetadataJson { get; set; } = string.Empty;
+    }
+}

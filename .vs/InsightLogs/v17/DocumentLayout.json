@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\ledis\\source\\repos\\insightlogs\\insightlogs.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\ledis\\source\\repos\\insightlogs\\insightlogs.ui\\components\\pages\\errorloglist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\pages\\errorloglist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\ledis\\source\\repos\\insightlogs\\insightlogs.ui\\components\\dialog\\analysisai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\dialog\\analysisai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T03:02:19.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnalysisAI.razor",
+              "DocumentMoniker": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
+              "ToolTip": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T02:25:39.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ErrorLogList.razor",
+              "DocumentMoniker": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
+              "ToolTip": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAAMBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T00:28:22.401Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

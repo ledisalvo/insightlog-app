@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Test.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Test.UI.77d6f02jkw.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Test.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Test.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Test.UI.props",
+      "PackagePath": "build\\Test.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Test.UI.props",
+      "PackagePath": "buildMultiTargeting\\Test.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Test.UI.props",
+      "PackagePath": "buildTransitive\\Test.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
