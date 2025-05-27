@@ -36,8 +36,15 @@ public class ErrorLogsController : ControllerBase
         return Ok(log);
     }
 
-    [HttpGet]
-    public async Task<IActionResult> GetAll(
+    [HttpGet("getAll")]
+    public async Task<ActionResult<List<ErrorLog>>> GetAll()
+    {
+        var logs = await _context.ErrorLogs.ToListAsync();
+        return Ok(logs);
+    }
+
+    [HttpGet("getAllPaginated")]
+    public async Task<IActionResult> GetAllPaginated(
         [FromQuery] string? service,
         [FromQuery] string? severity,
         [FromQuery] DateTime? from,

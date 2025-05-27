@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\",
+  "WorkspaceRootPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\ledis\\source\\repos\\insightlogs\\insightlogs.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\leo\\source\\repos\\insightlog-app\\insightlogs.ui\\components\\dashboard\\quantitydescriptioncard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\dashboard\\quantitydescriptioncard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\ledis\\source\\repos\\insightlogs\\insightlogs.ui\\components\\pages\\errorloglist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\pages\\errorloglist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\leo\\source\\repos\\insightlog-app\\insightlogs.ui\\components\\dashboard\\quantitydescriptioncard.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\dashboard\\quantitydescriptioncard.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\ledis\\source\\repos\\insightlogs\\insightlogs.ui\\components\\dialog\\analysisai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\dialog\\analysisai.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\leo\\source\\repos\\insightlog-app\\insightlogs.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\leo\\source\\repos\\insightlog-app\\insightlogs.ui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\leo\\source\\repos\\insightlog-app\\insightlogs.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|c:\\users\\leo\\source\\repos\\insightlog-app\\insightlogs.ui\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9868E730-47C2-40E0-8B92-90F8C5B758AD}|InsightLogs.UI\\InsightLogs.UI.csproj|solutionrelative:insightlogs.ui\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "InsightLogs.UI\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\App.razor",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\App.razor",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-19T03:02:19.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T01:30:22.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnalysisAI.razor",
-              "DocumentMoniker": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
-              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
-              "ToolTip": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
-              "RelativeToolTip": "InsightLogs.UI\\Components\\Dialog\\AnalysisAI.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA5AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\index.html",
+              "RelativeToolTip": "InsightLogs.UI\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-27T01:30:13.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\app.css",
+              "RelativeToolTip": "InsightLogs.UI\\wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-27T00:45:44.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuantityDescriptionCard.razor",
+              "DocumentMoniker": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor",
+              "ToolTip": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-19T02:25:39.973Z",
+              "WhenOpened": "2025-05-21T00:55:07.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ErrorLogList.razor",
-              "DocumentMoniker": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
-              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
-              "ToolTip": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
-              "RelativeToolTip": "InsightLogs.UI\\Components\\Pages\\ErrorLogList.razor",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAAMBAAAFAAAAAAAAAA==",
+              "Title": "QuantityDescriptionCard.razor.css",
+              "DocumentMoniker": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor.css",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor.css",
+              "ToolTip": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor.css",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\Dashboard\\QuantityDescriptionCard.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-26T23:27:04.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "InsightLogs.UI\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "InsightLogs.UI\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-19T00:28:22.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T17:08:10.152Z"
             }
           ]
         }

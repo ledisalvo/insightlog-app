@@ -1,0 +1,37 @@
+﻿body {
+}
+
+::deep .dashboard-card {
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: lightgrey;
+    border-color: hsl(var(--border));
+    padding: 1.5rem;
+}
+
+    ::deep .dashboard-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+::deep .card-number {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+
+::deep .card-title {
+    font-size: .875rem 14px;
+    line-height: 1.25rem;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+:root {
+    --border: 0 0% 89.8%;
+}

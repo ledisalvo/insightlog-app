@@ -1,16 +1,112 @@
 ﻿@page "/"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject IDialogService DialogService
+
+@using InsightLogs.UI.Components.Dashboard
+@using InsightLogs.UI.Components.Dialog
+@using InsightLogs.UI.DTOs
 @using MudBlazor
 
+
 <MudPaper Class="p-4">
-    <MudText Typo="Typo.h5">Texto con estilo MudBlazor</MudText>
-    <MudButton Color="Color.Primary">Botón estilizado</MudButton>
-    <MudSelect T="string" Label="Test select" @bind-Value="_dummy">
-        <MudSelectItem T="string" Value="@("Low")">Low</MudSelectItem>
-        <MudSelectItem T="string" Value="@("Medium")">Medium</MudSelectItem>
-        <MudSelectItem T="string" Value="@("High")">High</MudSelectItem>
-    </MudSelect>
+    <MudText Typo="Typo.h1">DASHBOARD</MudText>
+
+    <div class="dashboard-container">
+        <MudGrid Justify="Justify.Center" GutterSize="GutterSize.Small">
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrors" TotalErrorsDescription="Errores capturados" OnClickCallback="() => NavigateErrors(string.Empty)" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrorsLowSeverity" TotalErrorsDescription="Prioridad baja" OnClickCallback="() => NavigateErrors(_severityLow)" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrorsMediumSeverity" TotalErrorsDescription="Prioridad media" OnClickCallback="() => NavigateErrors(_severityMedium)" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrorsHighSeverity" TotalErrorsDescription="Prioridad alta" OnClickCallback="() => NavigateErrors(_severityHigh)" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrorsNotDefinedSeverity" TotalErrorsDescription="No priorizados" OnClickCallback="() => NavigateErrors(_notDefinedSeverity)" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrorsResolved" TotalErrorsDescription="Errores resueltos" OnClickCallback="() => NavigateErrors(_totalResolved)" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <QuantityDescriptionCard TotalErrors="@_totalErrorsNotResolved" TotalErrorsDescription="Errores no resueltos" OnClickCallback="() => NavigateErrors(_totalNotResolved)" />
+            </MudItem>
+        </MudGrid>
+    </div>
 </MudPaper>
 
 @code {
-    private string? _dummy;
+    private string? _totalErrors = "0";
+    private string? _totalErrorsLowSeverity = "0";
+    private string? _totalErrorsMediumSeverity = "0";
+    private string? _totalErrorsHighSeverity = "0";
+    private string? _totalErrorsNotDefinedSeverity = "0";
+    private string? _totalErrorsResolved = "0";
+    private string? _totalErrorsNotResolved = "0";
+
+    private string _severityLow = "Low";
+    private string _severityMedium = "Medium";
+    private string _severityHigh = "High";
+    private string _notDefinedSeverity = "Not defined";
+    private string _totalResolved = "Resolved";
+    private string _totalNotResolved = "Not Resolved";
+    private List<DashboardCard> cards = new();
+
+    private record DashboardCard(string Description, string TotalErrors, string Filter);
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetFromJsonAsync<List<ErrorLogDto>>("/api/errorlogs/getAll");
+        
+        _totalErrors = response?.Count().ToString();
+        _totalErrorsLowSeverity = response?.Where(x => x.Severity == "Low").Count().ToString();
+        _totalErrorsMediumSeverity = response?.Where(x => x.Severity == "Medium").Count().ToString();
+        _totalErrorsHighSeverity = response?.Where(x => x.Severity == "High").Count().ToString();
+        _totalErrorsNotDefinedSeverity = response?.Where(x => x.Severity == "Not defined").Count().ToString();
+        _totalErrorsResolved = response?.Where(x => x.Resolved).Count().ToString();
+        _totalErrorsNotResolved = response?.Where(x => !x.Resolved).Count().ToString();
+
+        List<DashboardCard> cards = new()
+        {
+            new("Errores capturados", _totalErrors, string.Empty),
+            new("Prioridad baja", _totalErrorsLowSeverity, "Low"),
+            new("Prioridad media", _totalErrorsMediumSeverity, "Medium"),
+            new("Prioridad alta", _totalErrorsHighSeverity, "High"),
+            new("No priorizados", _totalErrorsNotDefinedSeverity, "Not defined"),
+            new("Resueltos", _totalErrorsResolved, "Resolved"),
+            new("No resueltos", _totalErrorsNotResolved, "Not Resolved"),
+        };
+    }
+
+    private void NavigateErrors(string parameter)
+    {
+        var url = "/logs";
+
+        switch (parameter)
+        {
+            case "Low": 
+                url += $"?severity={_severityLow}";
+                break;
+            case "Medium":
+                url += $"?severity={_severityMedium}";
+                break;
+            case "High":
+                url += $"?severity={_severityHigh}";
+                break;
+            case "Not defined":
+                url += $"?severity={_notDefinedSeverity}";
+                break;
+            case "Resolved":
+                url += $"?resolved=true";
+                break;
+            case "Not Resolved":
+                url += $"?resolved=false";
+                break;
+        }
+        Navigation.NavigateTo(url);
+    }
 }

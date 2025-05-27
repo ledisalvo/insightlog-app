@@ -1,0 +1,15 @@
+﻿<div>
+    <MudPaper Class="dashboard-card text-center" Style="cursor: pointer;" @onclick="OnClickCallback">
+        <MudCard Class="card-border">
+            <MudIcon Icon="@Icons.Material.Filled.Favorite" Title="Favorite" />
+            <MudText Class="card-number" Typo="Typo.h1">@TotalErrors</MudText>
+            <MudText Class="card-title" Typo="Typo.caption">@TotalErrorsDescription</MudText>
+        </MudCard>
+    </MudPaper>
+</div>
+
+@code {
+    [Parameter] public string? TotalErrors { get; set; }
+    [Parameter] public string? TotalErrorsDescription { get; set; }
+    [Parameter] public EventCallback<MouseEventArgs> OnClickCallback { get; set; }
+}

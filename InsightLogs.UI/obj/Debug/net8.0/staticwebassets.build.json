@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nnMqs28cNd/Q1HCg8eUuZgouy7YVCTycJc8vsNzh90Y=",
+  "Hash": "G29xqOl00R34r8pbJY1gWoluDTQQ6vPGwJxMIHMiXwA=",
   "Source": "InsightLogs.UI",
   "BasePath": "_content/InsightLogs.UI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "InsightLogs.UI\\wwwroot",
       "Source": "InsightLogs.UI",
-      "ContentRoot": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\",
       "BasePath": "_content/InsightLogs.UI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "Hh7BRmiYuRD1Lq8ZF9jVWOOJuN3tWPS5M2lLZzuayjw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "weSY1+xC2IWsc4ncUHtQhWp3H5eek/LVHZEDlWdgryY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css",
+      "Identity": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css",
       "SourceId": "InsightLogs.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/InsightLogs.UI",
       "RelativePath": "InsightLogs.UI#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -73,17 +73,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "ok9slt1sdl",
-      "Integrity": "iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=",
+      "Fingerprint": "u4b9yt8qo3",
+      "Integrity": "Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
+      "Identity": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
       "SourceId": "InsightLogs.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/InsightLogs.UI",
       "RelativePath": "InsightLogs.UI#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -94,17 +94,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "ok9slt1sdl",
-      "Integrity": "iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=",
+      "Fingerprint": "u4b9yt8qo3",
+      "Integrity": "Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\app.css",
       "SourceId": "InsightLogs.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\",
       "BasePath": "_content/InsightLogs.UI",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -115,17 +115,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pbg2bnpvah",
-      "Integrity": "20kv5ol+woe99rEhQFkmEvo0572sp713Nc/pUnLODKc=",
+      "Fingerprint": "efmckbbe2n",
+      "Integrity": "isx5uVqrpUQwxzAWL+lH+ompP0AgDWseTlInZIRmEmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\index.html",
       "SourceId": "InsightLogs.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\",
       "BasePath": "_content/InsightLogs.UI",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -146,7 +146,7 @@
   "Endpoints": [
     {
       "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -183,7 +183,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.jrqzp895hu.js",
-      "AssetFile": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -228,7 +228,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -265,7 +265,7 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.qmvjbof2tn.css",
-      "AssetFile": "C:\\Users\\ledis\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\Leo\\.nuget\\packages\\mudblazor\\8.6.0\\staticwebassets\\MudBlazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -310,7 +310,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\app.css",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -319,7 +319,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2211"
+          "Value": "172"
         },
         {
           "Name": "Content-Type",
@@ -327,11 +327,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"20kv5ol+woe99rEhQFkmEvo0572sp713Nc/pUnLODKc=\""
+          "Value": "\"isx5uVqrpUQwxzAWL+lH+ompP0AgDWseTlInZIRmEmw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 18:12:40 GMT"
+          "Value": "Tue, 27 May 2025 00:47:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -341,13 +341,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-20kv5ol+woe99rEhQFkmEvo0572sp713Nc/pUnLODKc="
+          "Value": "sha256-isx5uVqrpUQwxzAWL+lH+ompP0AgDWseTlInZIRmEmw="
         }
       ]
     },
     {
-      "Route": "app.pbg2bnpvah.css",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\app.css",
+      "Route": "app.efmckbbe2n.css",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -356,7 +356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2211"
+          "Value": "172"
         },
         {
           "Name": "Content-Type",
@@ -364,11 +364,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"20kv5ol+woe99rEhQFkmEvo0572sp713Nc/pUnLODKc=\""
+          "Value": "\"isx5uVqrpUQwxzAWL+lH+ompP0AgDWseTlInZIRmEmw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 18:12:40 GMT"
+          "Value": "Tue, 27 May 2025 00:47:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -378,7 +378,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pbg2bnpvah"
+          "Value": "efmckbbe2n"
         },
         {
           "Name": "label",
@@ -386,13 +386,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-20kv5ol+woe99rEhQFkmEvo0572sp713Nc/pUnLODKc="
+          "Value": "sha256-isx5uVqrpUQwxzAWL+lH+ompP0AgDWseTlInZIRmEmw="
         }
       ]
     },
     {
       "Route": "index.37e5m0rekf.html",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -413,7 +413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 17:33:26 GMT"
+          "Value": "Tue, 20 May 2025 17:01:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -437,7 +437,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -458,7 +458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 May 2025 17:33:26 GMT"
+          "Value": "Tue, 20 May 2025 17:01:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -474,7 +474,7 @@
     },
     {
       "Route": "InsightLogs.UI.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -483,7 +483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "505"
+          "Value": "1462"
         },
         {
           "Name": "Content-Type",
@@ -491,11 +491,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=\""
+          "Value": "\"Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 02:55:02 GMT"
+          "Value": "Tue, 27 May 2025 01:44:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -505,13 +505,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc="
+          "Value": "sha256-Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg="
         }
       ]
     },
     {
-      "Route": "InsightLogs.UI.ok9slt1sdl.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
+      "Route": "InsightLogs.UI.styles.css",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -520,7 +520,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "505"
+          "Value": "1462"
         },
         {
           "Name": "Content-Type",
@@ -528,11 +528,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=\""
+          "Value": "\"Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 02:55:02 GMT"
+          "Value": "Tue, 27 May 2025 01:44:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg="
+        }
+      ]
+    },
+    {
+      "Route": "InsightLogs.UI.u4b9yt8qo3.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 01:44:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -542,7 +579,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ok9slt1sdl"
+          "Value": "u4b9yt8qo3"
         },
         {
           "Name": "label",
@@ -550,13 +587,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc="
+          "Value": "sha256-Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg="
         }
       ]
     },
     {
-      "Route": "InsightLogs.UI.ok9slt1sdl.styles.css",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css",
+      "Route": "InsightLogs.UI.u4b9yt8qo3.styles.css",
+      "AssetFile": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -565,7 +602,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "505"
+          "Value": "1462"
         },
         {
           "Name": "Content-Type",
@@ -573,11 +610,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=\""
+          "Value": "\"Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 02:55:02 GMT"
+          "Value": "Tue, 27 May 2025 01:44:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -587,7 +624,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ok9slt1sdl"
+          "Value": "u4b9yt8qo3"
         },
         {
           "Name": "label",
@@ -595,44 +632,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc="
-        }
-      ]
-    },
-    {
-      "Route": "InsightLogs.UI.styles.css",
-      "AssetFile": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InsightLogs.UI.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "505"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 02:55:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc="
+          "Value": "sha256-Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg="
         }
       ]
     }

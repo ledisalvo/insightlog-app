@@ -1,31 +1,16 @@
 ﻿@page "/logs"
 @inject HttpClient Http
 @inject IDialogService _dialogService
+@inject NavigationManager Navigation
+@inject NavigationManager NavManager
 @using InsightLogs.UI.Components.Dialog
+@using InsightLogs.UI.DTOs
 @using MudBlazor
 @using System.Net
 @using System.ComponentModel.DataAnnotations
 @using InsightLogs.Application.Helpers;
 
 <MudPaper Class="p-4">
-    <MudText Typo="Typo.h5">Registrar nuevo error</MudText>
-
-    <MudForm @ref="form" @bind-IsValid="@success">
-        <MudTextField @bind-Value="_newLog.Service" Label="Servicio"/>
-        <MudTextField @bind-Value="_newLog.Message" Label="Mensaje" />
-        <MudTextField @bind-Value="_newLog.StackTrace" Label="Stack Trace" Lines="3" />
-        <MudSelect T="string" @bind-Value="_newLog.Severity" Label="Severidad">
-            @foreach (var severity in _severities)
-            {
-                <MudSelectItem T="string" Value="@severity">@severity</MudSelectItem>
-            }
-        </MudSelect>
-
-        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(()=>SubmitLog())">Guardar</MudButton>
-    </MudForm>
-
-    <MudDivider Class="my-4" />
-
     <MudText Typo="Typo.h5">Logs existentes</MudText>
 
     <MudTextField @bind-Value="_filterService" Label="Servicio" />
@@ -62,8 +47,8 @@
             <MudTd>@(context.Resolved ? "Sí" : "No")</MudTd>
             <MudTd>
                 <MudButton Size="Size.Small"
-                           Color="Color.Secondary"
-                           OnClick="@(() => AnalyzeError(context))">
+                Color="Color.Secondary"
+                OnClick="@(() => AnalyzeError(context))">
                     <MudIcon Icon="@Icons.Material.Filled.Psychology" Class="me-1" />
                     Analizar con IA
                 </MudButton>
@@ -85,12 +70,11 @@
     private string? _severity;
     private string? _filterService;
     private string? _filterSeverity;
+    private string? _filterResolved;
     private DateTime? _from;
     private DateTime? _to;
-    bool success;
-    MudForm form;
-
-    private string _value;
+    
+    private string? _value;
     private Margin _margin;
     private bool _dense;
     private bool _disabled;
@@ -103,12 +87,21 @@
     private bool _modal = true;
 
 
-    private ErrorLogDto _newLog = new();
+    
     private readonly string?[] _severities = { "", "Low", "Medium", "High" };
 
     protected override async Task OnInitializedAsync()
     {
         Console.WriteLine("INICIALIZANDO...");
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+        var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+
+        if (query.TryGetValue("severity", out var sev))
+            _filterSeverity = sev;
+
+        if (query.TryGetValue("resolved", out var resolved))
+            _filterResolved = resolved;
+
         await LoadLogs();
     }
 
@@ -124,13 +117,16 @@
             if (!string.IsNullOrWhiteSpace(_filterSeverity))
                 query.Add($"severity={_filterSeverity}");
 
+            if (!string.IsNullOrWhiteSpace(_filterResolved))
+                query.Add($"resolved={_filterResolved}");
+
             if (_from.HasValue)
                 query.Add($"from={_from.Value:yyyy-MM-dd}");
 
             if (_to.HasValue)
                 query.Add($"to={_to.Value:yyyy-MM-dd}");
 
-            var url = "/api/errorlogs";
+            var url = "/api/errorlogs/getAllPaginated";
             query.Add($"page={_page}");
             query.Add($"pageSize={_pageSize}");
 
@@ -161,7 +157,7 @@
                     ErrorMetadataJson = fullMessage
                 };
 
-            var response = await Http.PostAsJsonAsync("/api/errorlogs", errorObj);
+            var response = await Http.PostAsJsonAsync("/api/errorlogs/", errorObj);
             if (response.IsSuccessStatusCode)
             {
                 await LoadLogs();
@@ -180,24 +176,6 @@
         await LoadLogs();
         if (_table is not null)
             await _table.ReloadServerData();
-    }
-
-    private async Task SubmitLog()
-    {
-        Console.WriteLine("ENVIANDO NUEVO LOG");
-        _newLog.Timestamp = DateTime.UtcNow;
-
-        var response = await Http.PostAsJsonAsync("/api/errorlogs", _newLog);
-        if (response.IsSuccessStatusCode)
-        {
-            _newLog = new(); // Reset
-            await LoadLogs();
-        }
-        else
-        {
-            // Manejo de error simple (podemos mejorarlo con MudSnackbar después)
-            Console.WriteLine("Error al guardar el log.");
-        }
     }
 
     private async Task MarkAsResolved(Guid id)
@@ -236,7 +214,7 @@
         if (_to.HasValue)
             query.Add($"to={_to.Value:yyyy-MM-dd}");
 
-        var url = "/api/errorlogs?" + string.Join("&", query);
+        var url = "/api/errorlogs/getAllPaginated?" + string.Join("&", query);
 
         var response = await Http.GetFromJsonAsync<ErrorLogResponse>(url, cancellationToken);
 
@@ -256,29 +234,6 @@
 
         var options = new DialogOptions { MaxWidth = MaxWidth.Medium, FullWidth = true };
 
-        _dialogService.ShowAsync<AnalysisAI>("Análisis del Error", parameters, options);
-    }
-
-    
-
-    public class ErrorLogDto
-    {
-        public Guid Id { get; set; }
-        public string Service { get; set; } = string.Empty;
-        public string Message { get; set; } = string.Empty;
-        public string StackTrace { get; set; } = string.Empty;
-        public string Severity { get; set; } = "Not defined"; // Low, Medium, High
-        public DateTime Timestamp { get; set; } = DateTime.UtcNow;
-        public bool Resolved { get; set; } = false;
-        public string ReportedBy { get; set; } = "System";
-        public string ErrorMetadataJson { get; set; } = string.Empty;
-    }
-
-    public class ErrorLogResponse
-    {
-        public int Total { get; set; }
-        public int Page { get; set; }
-        public int PageSize { get; set; }
-        public List<ErrorLogDto> Data { get; set; } = new();
+        await _dialogService.ShowAsync<AnalysisAI>("Análisis del Error", parameters, options);
     }
 }

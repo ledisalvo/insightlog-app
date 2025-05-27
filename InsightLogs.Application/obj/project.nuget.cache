@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3ik6wGibVvE=",
+  "dgSpecHash": "LZt+frPCWAo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Application\\InsightLogs.Application.csproj",
+  "projectFilePath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Application\\InsightLogs.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ledis\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
-    "C:\\Users\\ledis\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\ledis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\Leo\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\Leo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Leo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

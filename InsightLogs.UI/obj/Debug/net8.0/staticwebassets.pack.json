@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\InsightLogs.UI.ok9slt1sdl.bundle.scp.css"
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InsightLogs.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\InsightLogs.UI.u4b9yt8qo3.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\app.css",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.UI\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.UI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

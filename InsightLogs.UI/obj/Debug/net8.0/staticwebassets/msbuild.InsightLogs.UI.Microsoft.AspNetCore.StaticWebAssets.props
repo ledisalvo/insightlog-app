@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pbg2bnpvah</Fingerprint>
-      <Integrity>20kv5ol+woe99rEhQFkmEvo0572sp713Nc/pUnLODKc=</Integrity>
+      <Fingerprint>efmckbbe2n</Fingerprint>
+      <Integrity>isx5uVqrpUQwxzAWL+lH+ompP0AgDWseTlInZIRmEmw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
@@ -36,23 +36,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InsightLogs.UI.ok9slt1sdl.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InsightLogs.UI.u4b9yt8qo3.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>InsightLogs.UI</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/InsightLogs.UI</BasePath>
-      <RelativePath>InsightLogs.UI.ok9slt1sdl.bundle.scp.css</RelativePath>
+      <RelativePath>InsightLogs.UI.u4b9yt8qo3.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>ok9slt1sdl</Fingerprint>
-      <Integrity>iAfuMcrUezPMRUyi5RD9EJFMSEk3BYm4zJ25uzSG7wc=</Integrity>
+      <Fingerprint>u4b9yt8qo3</Fingerprint>
+      <Integrity>Yml+LaMr4QHUdvjdKdZaXKaChNZorcb9lQNq+eIwOVg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InsightLogs.UI.ok9slt1sdl.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\InsightLogs.UI.u4b9yt8qo3.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

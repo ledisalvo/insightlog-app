@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Test.UI.bundle.scp.css",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\Test.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Test.UI.bundle.scp.css",
       "PackagePath": "staticwebassets\\Test.UI.77d6f02jkw.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\app.css",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\Test.UI\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\Test.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\Test.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\Test.UI\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\Test.UI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

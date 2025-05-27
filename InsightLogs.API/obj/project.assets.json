@@ -3331,23 +3331,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ledis\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Leo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.API\\InsightLogs.API.csproj",
+      "projectUniqueName": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.API\\InsightLogs.API.csproj",
       "projectName": "InsightLogs.API",
-      "projectPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.API\\InsightLogs.API.csproj",
-      "packagesPath": "C:\\Users\\ledis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.API\\obj\\",
+      "projectPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.API\\InsightLogs.API.csproj",
+      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ledis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3356,23 +3358,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Application\\InsightLogs.Application.csproj": {
-              "projectPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Application\\InsightLogs.Application.csproj"
+            "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Application\\InsightLogs.Application.csproj": {
+              "projectPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Application\\InsightLogs.Application.csproj"
             },
-            "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Domain\\InsightLogs.Domain.csproj": {
-              "projectPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Domain\\InsightLogs.Domain.csproj"
+            "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Domain\\InsightLogs.Domain.csproj": {
+              "projectPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Domain\\InsightLogs.Domain.csproj"
             },
-            "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Infrastructure\\InsightLogs.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Infrastructure\\InsightLogs.Infrastructure.csproj"
+            "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Infrastructure\\InsightLogs.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Infrastructure\\InsightLogs.Infrastructure.csproj"
             },
-            "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Shared\\InsightLogs.Shared.csproj": {
-              "projectPath": "C:\\Users\\ledis\\source\\repos\\InsightLogs\\InsightLogs.Shared\\InsightLogs.Shared.csproj"
+            "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Shared\\InsightLogs.Shared.csproj": {
+              "projectPath": "C:\\Users\\Leo\\source\\repos\\insightlog-app\\InsightLogs.Shared\\InsightLogs.Shared.csproj"
             }
           }
         }
@@ -3427,7 +3430,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

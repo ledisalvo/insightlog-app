@@ -1,0 +1,64 @@
+﻿@page "/newError"
+@using InsightLogs.UI.DTOs
+@using MudBlazor
+@inject HttpClient Http
+@inject ISnackbar Snackbar
+
+<MudDialog>
+    <TitleContent>
+        <MudText Typo="Typo.h6">
+            <MudIcon Icon="@Icons.Material.Filled.Create" Class="mr-3 mb-n1" />
+            Cargar nuevo error
+        </MudText>
+    </TitleContent>
+    <DialogContent>
+        <MudForm @ref="form" @bind-IsValid="@success">
+            <MudTextField @bind-Value="_newLog.Service" Label="Servicio" />
+            <MudTextField @bind-Value="_newLog.Message" Label="Mensaje" />
+            <MudTextField @bind-Value="_newLog.StackTrace" Label="Stack Trace" Lines="3" />
+            <MudSelect T="string" @bind-Value="_newLog.Severity" Label="Severidad">
+                @foreach (var severity in _severities)
+                {
+                    <MudSelectItem T="string" Value="@severity">@severity</MudSelectItem>
+                }
+            </MudSelect>
+
+
+        </MudForm>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancelar</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SubmitLog">Guardar</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    MudForm form;
+    bool success;
+    bool _isError;
+    private ErrorLogDto _newLog = new();
+    private readonly string?[] _severities = { "", "Low", "Medium", "High" };
+    private void Cancel() => MudDialog.Cancel();
+
+    private async Task SubmitLog()
+    {
+        Console.WriteLine("ENVIANDO NUEVO LOG");
+        _newLog.Timestamp = DateTime.UtcNow;
+
+        var response = await Http.PostAsJsonAsync("/api/errorlogs", _newLog);
+        if (!response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Error al crear el log.", Severity.Error);
+            MudDialog.Close(DialogResult.Ok(false));
+        }
+        else
+        {
+            Snackbar.Add("El error se registró correctamente", Severity.Success);
+            MudDialog.Close(DialogResult.Ok(true));
+            
+        }
+    }
+}

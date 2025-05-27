@@ -39,7 +39,70 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/ErrorLogs/{id}": {
+      "get": {
+        "tags": [
+          "ErrorLogs"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ErrorLogs/getAll": {
+      "get": {
+        "tags": [
+          "ErrorLogs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ErrorLog"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ErrorLog"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ErrorLog"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ErrorLogs/getAllPaginated": {
       "get": {
         "tags": [
           "ErrorLogs"
@@ -91,29 +154,6 @@
               "type": "integer",
               "format": "int32",
               "default": 10
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/ErrorLogs/{id}": {
-      "get": {
-        "tags": [
-          "ErrorLogs"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
             }
           }
         ],
